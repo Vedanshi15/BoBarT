@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,900&display=swap');
+/************************************************************************/
+
+html {
+ box-sizing: border-box;
+  font-size: 16px;
+  background-color: #000;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+body {
+ margin: 0;
+ font-family: 'Lato', sans-serif;
+}
+
+.page-wrapper {
+  max-width: 1200px;
+  margin:auto;
+  position: relative;
+}
+.hidden {
+ position: absolute; /* take the element out of its regular flow */
+ left: -10000px; /* move 10000 pixels to the left */
+}
+
+#header .page-wrapper {
+padding: 1.75em; /**28px**/
+}
+
+#main-menu {
+ position:absolute;
+ right:0;
+ top:46px;
+}
+#main-menu ul {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+#main-menu li {
+ display: inline-block;
+ text-transform: uppercase;
+ font-size:1em;
+ padding: 0px 32px;
+}
+#main-menu a {
+ color: #fff;
+ text-decoration: none;
+}
+#main-menu a:hover{
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.dropbutton {
+  background-color: #000;
+  color: white;
+  padding: 16px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+.dropdown:hover .dropbtn {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#sub-menu{
+  padding:0.5em;
+}
+#sub-menu ul{
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+#sub-menu li{
+  padding-right: 3em;
+  display:inline-block;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+#sub-menu a{
+  color: #fff;
+  text-decoration: none;
+}
+#sub-menu a:hover{
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#footer{
+  padding-top: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  color:#fff;
+
+}
+.break-bar{
+  border-top: 1px solid white;
+}
+/*--------------------------------------------------------------------*/
+
+#careerForm {
+  color:#fff;
+  font-size:1.2em;
+}
+
+#thank_userMsg {
+  display:none;
+  color:#fff;
+  font-size:1.2em;
+}
+#thankImage {
+  height:50%;
+  width:50%;
+  margin-left:20%;
+}
+
+#thank_userMsg p {
+  white-space:pre;
+}
+
+.preferences {
+  white-space:pre;
+  font-size:1.2em;
+}
+
+.submitApplication {
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#000;
+  text-align:center;
+  transition: all 0.2s;
+  font-size:1.1em;
+}
+
+.submitApplication:hover {
+  color:yellow;
+  background-color:#000;
+}

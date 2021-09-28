@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />     
+    <script src="js/career_page.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/career_page.css" />	
+    <title>BobarT</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="page-wrapper">
+        <div id="logo-and-slogan">
+          <a href="restaurant.html"><img src="images/bobatea_logo.png" id="logo" alt="bobarT logo"/></a>
+        </div>
+		<!-- Navigation -->
+        <nav id="main-menu">
+          <h3 class="hidden">Main menu</h3>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="DailySpecial.html">Daily Special</a></li>
+            <li class="dropdown">
+              <button class="dropbutton">Information</button>
+              <div class="dropdown-content">
+                <a href="about_us.html">About Us</a>
+                <a href="ContactUs.html">Contact Us</a>
+                <a href="career_page.html">Career</a>
+                <a href="locations.html">Location</a>
+              </div>
+            </li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="#">Contest</a></li>
+            <li><a href="site_map.html">Site Map</a></li>
+          </ul>
+        </nav>
+      </div> 
+    </header>
+	<!-- main -->
+	<main id="main">
+	    <div class="page-wrapper">
+        <!--Form-->
+        <form action="#" method="post" id="careerForm" name="form_career">
+          <fieldset>
+            <legend><h2>Please fill out the form below</h2></legend> 
+              <p>
+                <label for="user_fname">First Name:</label>
+                <input type="text" id="user_fname" name="user_fname" />
+                <label for="user_lname">Last Name:</label>
+                <input type="text" id="user_lname" name="user_lname" />
+              </p>
+              <p>
+                <label for="user_email">Email Address</label>
+                <input type="email" id="user_email" name="user_email" />
+              </p>
+              <p>
+                <label for="user_phone">Phone Number</label>
+                <input type="tel" id="user_phone" name="user_phone" placeholder="416-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  />
+              </p>
+              <p>
+                <label for="user_resume">Resume (Optional)</label>
+                <input type="file" id="user_resume" name="user_resume">
+              </p>
+              <p>
+                <input class="submitApplication" type="submit" value="Submit your application" name="submit"/>
+              </p>
+              <p class="preferences">
+                What we are looking for!
+                
+                - Liquor License Required
+                - Bar Experience (If no experience we will train, but will perfer) 
+                - Waitering Skils (If no experience we will train, but will perfer)
+                - Communication Skills
+                - Flexible Availability
+                - Must be over 19 years old
+                - Must be a Canadian Citizen
+              <p>
+          </fieldset>
+        </form>
+        
+        <!--Output Message-->
+        <div id="thank_userMsg">
+          <fieldset>
+            <h2>Thank you <span id="thank_user"></span> for filling out the form!</h2>
+              <div>
+              <img src="images/bobatea_logo.png" id="thankImage" alt="bobarT logo"/>
+                <p>
+                Please wait for 4-5 Business Days for us to reach you.
+                If you have not heard back from us. Please contact us with the number below:
+                416-555-555
+                </p>
+              </div>
+          </fieldset>
+        </div>
+      </div>
+	</main>  
+     <!-- footer -->
+     <footer id="footer">
+       <div class="break-bar">
+         <nav id="sub-menu">
+           <h3 class="hidden">Sub menu</h3>
+           <ul>
+             <li><a href="menu.html">Menu</a></li>
+             <li><a href="about_us.html">About us</a></li>
+             <li><a href="locations.html">Location</a></li>
+             <li><a href="site_map.html">Site Map</a></li>
+             <li><a href="ContactUs.html">Contact us</a></li>
+             <li><a href="DailySpecial.html">Daily Special</a></li>
+             <li><a href="#">Booking</a></li>
+             <li><a href="giftcard.html">Gift Card</a></li>
+             <li><a href="#">Contest</a></li>
+             <li><a href="career_page.html">Career</a></li>
+           </ul>
+         </nav>
+       </div>
+     </footer>
+  </body>
+</html>

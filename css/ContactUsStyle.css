@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,900&display=swap');
+/************************************************************************/
+
+html {
+ box-sizing: border-box;
+  font-size: 16px;
+  background-color: #000;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+body {
+ margin: 0;
+ font-family: 'Lato', sans-serif;
+}
+
+.page-wrapper {
+  max-width: 1200px;
+  margin:auto;
+  position: relative;
+}
+.hidden {
+ position: absolute; /* take the element out of its regular flow */
+ left: -10000px; /* move 10000 pixels to the left */
+}
+
+#header .page-wrapper {
+padding: 1.75em; /**28px**/
+}
+
+#main-menu {
+ position:absolute;
+ right:0;
+ top:46px;
+}
+#main-menu ul {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+#main-menu li {
+ display: inline-block;
+ text-transform: uppercase;
+ font-size:1em;
+ padding: 0px 32px;
+}
+#main-menu a {
+ color: #fff;
+ text-decoration: none;
+}
+#main-menu a:hover{
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.dropbutton {
+  background-color: #000;
+  color: white;
+  padding: 16px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+.dropdown:hover .dropbtn {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#sub-menu{
+  padding:0.5em;
+}
+#sub-menu ul{
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+#sub-menu li{
+  padding-right: 3em;
+  display:inline-block;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+#sub-menu a{
+  color: #fff;
+  text-decoration: none;
+}
+#sub-menu a:hover{
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#footer{
+  padding-top: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  color:#fff;
+  margin-top:400px;
+}
+.break-bar{
+  border-top: 1px solid white;
+}
+
+/* MAIN STYLES */
+
+input[type=text],[type=email],textarea {
+  width:400px;
+  border: 1px solid #7a7a7a;
+  margin-bottom:20px;
+  height:35px;
+}
+textarea {
+  height:200px;
+}
+#section-one {
+  clear:both;
+  height:300px;
+  background-image:url("../images/background1.jpg"); 
+}
+#section-one h1 {
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:190px;
+  margin:0px;
+  text-transform:uppercase;
+  color:black;
+  font-size:30px;
+}
+#section-one h3 {	
+	text-transform:uppercase;
+}
+#section-one p {
+  margin-bottom:35px;
+  font-weight:bold;
+}
+.section-div1-p {
+  text-transform:uppercase;
+  font-size:20px;
+}
+#section-div1 {
+  width:40%;
+  text-align:center;
+  display:inline-block;
+  background-color:black;
+  float:left;
+  margin-left:9%;
+  margin-right:1%;
+  color:white;
+  padding-top:10px;
+}
+#section-div2 {
+  width:40%;
+  text-align:center;
+  display:inline-block;
+  background-color:Black;
+  float:right;
+  color:white;
+  margin-left:1%;
+  margin-right:9%;
+}
+#section-div2 p {
+  padding-top:100px;
+  font-size: 30px;
+}
+#submit-button {
+  margin-top:8px;
+  padding-bottom:20px;
+}
+#submit-button button {
+  background-color:white;
+  color:black;
+  width:30%;
+  padding:10px;
+  border:solid 1px gray;
+  font-weight:bold;
+  font-size:18px;
+  border-radius: 8px;
+}
+#submit-button button:hover {
+  color:black;
+  background-color:lightgray;
+}
